@@ -1,0 +1,58 @@
+[
+  {
+    "ContainingType": "ProtoApi.Controllers.HomeController",
+    "Method": "GetInformation",
+    "RelativePath": "Home/GetApiScheme",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProtoApi.Controllers.HomeController",
+    "Method": "viewData",
+    "RelativePath": "Home/PostApiScheme",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Place",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Age",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PhoneNr",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Image",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "ImageData",
+        "Type": "System.Byte[]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
