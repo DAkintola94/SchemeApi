@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Eier\\source\\repos\\ProtoApi\\ProtoApi\\ProtoApi.csproj": {}
+    "C:\\Users\\Eier\\Documents\\ApiWebProto\\ProtoApi\\ProtoApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Eier\\source\\repos\\ProtoApi\\ProtoApi\\ProtoApi.csproj": {
+    "C:\\Users\\Eier\\Documents\\ApiWebProto\\ProtoApi\\ProtoApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Eier\\source\\repos\\ProtoApi\\ProtoApi\\ProtoApi.csproj",
+        "projectUniqueName": "C:\\Users\\Eier\\Documents\\ApiWebProto\\ProtoApi\\ProtoApi.csproj",
         "projectName": "ProtoApi",
-        "projectPath": "C:\\Users\\Eier\\source\\repos\\ProtoApi\\ProtoApi\\ProtoApi.csproj",
+        "projectPath": "C:\\Users\\Eier\\Documents\\ApiWebProto\\ProtoApi\\ProtoApi.csproj",
         "packagesPath": "C:\\Users\\Eier\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Eier\\source\\repos\\ProtoApi\\ProtoApi\\obj\\",
+        "outputPath": "C:\\Users\\Eier\\Documents\\ApiWebProto\\ProtoApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,6 +49,26 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"

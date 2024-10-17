@@ -1,17 +1,19 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ProtoApi.Data;
 
 namespace ProtoApi.Controllers
 {
-	[ApiController]
+    [ApiController]
 	[Route("[controller]")]
 	public class HomeController : Controller
 	{
 		private readonly ILogger<HomeController> _logger;
 		private static List<Information> _informationList = new List<Information>();
-		public HomeController(ILogger<HomeController> logger)
+		private readonly ApplicationDbContext _context;
+		public HomeController(ILogger<HomeController> logger, ApplicationDbContext context)
 		{
-
 			_logger = logger;
+			_context = context;
 		}
 
 
@@ -27,6 +29,8 @@ namespace ProtoApi.Controllers
 				information.ImageData = ms.ToArray();
 			}
 
+			_context.Information_data.Add(information); //this is to add the data to the database. Rembember its the variabel of dbcontext class
+			await _context.SaveChangesAsync(); //this is to save the data to the database
 
 			_informationList.Add(information); //this act as a "mellom lager" so we can use it else where
 											   //its the same as changes.Add();

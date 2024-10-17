@@ -1,4 +1,7 @@
 
+using Microsoft.EntityFrameworkCore;
+using ProtoApi.Data;
+
 namespace ProtoApi
 {
 	public class Program
@@ -23,7 +26,12 @@ namespace ProtoApi
 					});
 			});
 
+			builder.Services.AddDbContext<ApplicationDbContext>(options =>
 			
+				options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"),
+				new MySqlServerVersion(new Version(11, 5, 2))));
+
+
 			builder.Services.AddEndpointsApiExplorer();
 			builder.Services.AddSwaggerGen();
 
