@@ -51,5 +51,4 @@ for(const elements of data)
 
 }
 
-
 getData();
